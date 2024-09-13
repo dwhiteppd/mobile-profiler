@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 from __future__ import absolute_import
 from __future__ import print_function
@@ -31,6 +30,7 @@ setup(
     py_modules=[splitext(basename(path))[0] for path in glob("src/*.py")],
     install_requires=[
         "pyserial",
+        "tqdm"
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
