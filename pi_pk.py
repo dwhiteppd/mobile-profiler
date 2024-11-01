@@ -41,7 +41,7 @@ ppk2_test.start_measuring()         # start measuring
 time.sleep(1)
 
 now = datetime.now()
-log_filename = now.strftime("./logs/%Y-%m-%d_%H-%M_ppk2-log.csv")
+log_filename = now.strftime("/var/log/pi-pk/%Y-%m-%d_%H-%M_ppk2-log.csv")
 
 seconds_per_sample = 1 / DATA_LOGS_PER_S
 total_sample_count = TEST_DURATION_S * DATA_LOGS_PER_S
